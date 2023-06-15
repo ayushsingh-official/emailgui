@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,9 +12,9 @@ export class HomeComponent {
   //snack variable declare
   constructor(private snack:MatSnackBar){}
 
-  // manually button created 
+  // manually button created- function alloted
   btnclick(){
     console.log("btn click");
-    this.snack.open("welcome to this app");
+    this.snack.open("welcome to this app",);
   }
 }
